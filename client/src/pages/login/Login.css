@@ -1,0 +1,93 @@
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #3A01A8;
+    background: -webkit-linear-gradient(top left, #3A01A8, #35BADA);
+    background: -moz-linear-gradient(top left, #3A01A8, #35BADA);
+    background: linear-gradient(to bottom right, #3A01A8, #35BADA);
+}
+
+.loginTitle{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid rgb(101, 255, 101);
+}
+
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label{
+  margin: 10px 0;
+  color: white;
+
+}
+
+.loginInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.loginButton {
+    padding: 10px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fdffff;
+   }
+   
+   .loginButton::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    color: white;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .loginButton:hover::before {
+    width: 105%;
+   }
+   
+   .loginButton:hover {
+    color: #ffffff;
+   }
+   
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(211, 136, 109);
+}
+.loginRegisterButton{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(238, 79, 111);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}

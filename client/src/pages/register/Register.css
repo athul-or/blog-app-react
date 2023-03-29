@@ -1,0 +1,87 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #3A01A8;
+    background: -webkit-linear-gradient(top left, #3A01A8, #35BADA);
+    background: -moz-linear-gradient(top left, #3A01A8, #35BADA);
+    background: linear-gradient(to bottom right, #3A01A8, #35BADA);
+}
+
+.registerTitle{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid #76fb84;
+}
+
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm > label{
+  margin: 10px 0;
+  color: white;
+}
+
+.registerInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.registerButton {
+    padding: 10px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fdffff;
+   }
+   
+   .registerButton::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    color: white;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .registerButton:hover::before {
+    width: 105%;
+   }
+   
+   .registerButton:hover {
+    color: #ffffff;
+   }
+
+.registerLoginButton{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(249, 86, 102);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}

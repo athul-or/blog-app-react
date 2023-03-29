@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.settings {
+  display: flex;
+  background-color: rgb(214, 240, 255);
+}
+
+.settingsWrapper {
+  flex: 9;
+  padding: 20px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsUpdateTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(48, 74, 168);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.settingsDeleteTitle {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(249, 84, 84);
+  font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.settingsPP > img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.PPbutton{
+  margin-top: 10px;
+  background-color: rgb(74, 8, 135);
+  color: white;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  background-color: rgb(63, 88, 247);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* margin-left: 10px; */
+  cursor: pointer;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgb(48, 74, 168);
+  margin-left: 250px;
+
+}
+
+.settingsForm > input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid rgb(180, 208, 247);
+  /* border-radius: 10px; */
+  background-color: rgb(214, 240, 255);
+  margin-left: 250px;
+
+}
+
+.settingsSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(25, 108, 156);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+   margin-bottom: 6px;
+}
+
